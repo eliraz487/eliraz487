@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preview Frame</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        background: #f9fafb;
+      }
+
+      .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.8rem 1rem;
+        background: #111827;
+        color: #fff;
+      }
+
+      .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #34d399;
+        display: inline-block;
+        margin-inline-start: 0.5rem;
+      }
+
+      .chat {
+        max-width: 860px;
+        margin: 1rem auto;
+        padding: 0 1rem 1rem;
+      }
+
+      .msg {
+        padding: 0.8rem 1rem;
+        border-radius: 12px;
+        margin-bottom: 0.7rem;
+        line-height: 1.5;
+      }
+
+      .user {
+        background: #e5e7eb;
+      }
+
+      .assistant {
+        background: #d1fae5;
+        border: 1px solid #6ee7b7;
+      }
+
+      .composer {
+        position: sticky;
+        bottom: 0;
+        background: #fff;
+        border-top: 1px solid #e5e7eb;
+        padding: 0.7rem;
+      }
+
+      input {
+        width: 100%;
+        padding: 0.75rem 0.9rem;
+        border-radius: 10px;
+        border: 1px solid #d1d5db;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top">
+      <strong>ChatGPT Preview בתוך iFrame</strong>
+      <span><span class="dot"></span> מחובר (דמו)</span>
+    </div>
+
+    <div class="chat">
+      <div class="msg user">תיצור אתר iframe בשביל chatgpt embded</div>
+      <div class="msg assistant">
+        בטח! זה preview מקומי שמדמה איך embed נראה בתוך אתר, כולל מסך צ'אט ועיצוב בסיסי.
+      </div>
+      <div class="msg assistant">
+        לשימוש אמיתי פתח את ChatGPT בכפתור בדף הראשי, כי embedding ישיר לרוב נחסם.
+      </div>
+    </div>
+
+    <div class="composer">
+      <input type="text" value="זהו שדה הדגמה בלבד" readonly />
+    </div>
+  </body>
+</html>
